@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Мистецтво SVG — фігури та анімація</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(180deg, #f6f9fc 0%, #ffffff 100%);
+      color: #222;
+    }
+
+    .card {
+      width: min(920px, 94vw);
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(30, 40, 80, 0.08);
+      background: white;
+    }
+
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 20px;
+    }
+
+    p.lead {
+      margin: 0 0 18px 0;
+      color: #444;
+      font-size: 14px;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .shape {
+      stroke-width: 5;
+      transition: stroke 300ms ease, fill 300ms ease, transform 300ms ease;
+    }
+
+    .sq { stroke: #2b7cff;  fill: #cfe6ff;  }
+    .rect { stroke: #ff6b6b; fill: #ffdada; }
+    .circle { stroke: #2ec4b6; fill: #dffaf6; }
+    .ellipse { stroke: #8e6cff; fill: #efe8ff; }
+
+    .shape:hover { transform: scale(1.03); cursor: pointer; }
+
+    @keyframes pulseColors {
+      0%   { stroke: #2ec4b6; fill: #dffaf6; }
+      25%  { stroke: #ff9f1c; fill: #fff2e0; }
+      50%  { stroke: #ff6b6b; fill: #ffecec; }
+      75%  { stroke: #7c5cff; fill: #efe8ff; }
+      100% { stroke: #2ec4b6; fill: #dffaf6; }
+    }
+
+    .animated-circle {
+      animation: pulseColors 4s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .labels {
+      font-size: 12px;
+      fill: #333;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <h1 id="title">Мистецтво SVG: фігури та анімація</h1>
+    <p class="lead">Чотири прості фігури (квадрат, прямокутник, коло, еліпс). Коло анімовано — змінює колір контуру та заливки.</p>
+
+    <svg viewBox="0 0 900 300" role="img" aria-labelledby="svgTitle svgDesc" xmlns="http://www.w3.org/2000/svg">
+      <title id="svgTitle">Чотири SVG-фігури з прикладом анімації</title>
+      <desc id="svgDesc">Квадрат, прямокутник, коло і еліпс. Коло анімовано через CSS.</desc>
+
+      <rect class="shape sq" x="40" y="40" width="160" height="160" rx="8" ry="8" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="120" y="220" class="labels" text-anchor="middle">Квадрат</text>
+
+      <rect class="shape rect" x="260" y="55" width="220" height="130" rx="12" ry="12" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="370" y="205" class="labels" text-anchor="middle">Прямокутник</text>
+
+      <circle class="shape circle animated-circle" cx="640" cy="120" r="70" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="640" y="210" class="labels" text-anchor="middle">Коло (анімація)</text>
+
+      <ellipse class="shape ellipse" cx="820" cy="110" rx="60" ry="90" stroke-linejoin="round" stroke-linecap="round" />
+      <text x="820" y="210" class="labels" text-anchor="middle">Еліпс</text>
+    </svg>
+  </main>
+</body>
+</html>
