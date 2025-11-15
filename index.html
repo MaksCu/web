@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Travel Explorer — Нове наповнення</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">TRAVEL EXPLORER</div>
+  <nav class="nav" id="nav">
+    <a href="#hero">Головна</a>
+    <a href="#about">Про нас</a>
+    <a href="#services">Тури</a>
+    <a href="#destinations">Найпопулярніші країни</a>
+    <a href="#reviews">Відгуки</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+  <div class="burger" onclick="toggleMenu()">☰</div>
+</header>
+
+<section class="hero" id="hero">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+  <div class="hero-text">
+    <h1>Подорожуй світом разом з нами</h1>
+    <p>Надихаємо, плануємо, організовуємо — мандруй легко!</p>
+    <a class="btn" href="#services">Переглянути тури</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Travel Explorer">
+  <div>
+    <h2>Про компанію</h2>
+    <p>Travel Explorer — провідний туристичний оператор з 15-річним досвідом, який створює незабутні подорожі для кожного клієнта. Ми організовуємо тури будь-якої складності: від спокійного сімейного відпочинку до активних пригод та екстремальних поїздок.</p>
+    <h3>Наше портфоліо включає:</h3>
+    <ul>
+      <li>Більше 120 напрямків по всьому світу</li>
+      <li>Понад 20 видів турів: гірські походи, морські круїзи, гастротури, культурні та історичні маршрути, оглядові тури, VIP‑відпочинок, wellness та екологічні тури</li>
+      <li>Індивідуальні та групові тури для будь-якого формату відпочинку</li>
+    </ul>
+    <br>
+    <h3>Наші переваги:</h3>
+    <ul>
+      <li>Перевірені партнери: готелі, авіакомпанії, транспортні та екскурсійні служби</li>
+      <li>Повний супровід клієнта на всіх етапах подорожі</li>
+      <li>Індивідуальний підхід до кожного туриста</li>
+      <li>Високий рівень безпеки та дотримання міжнародних стандартів</li>
+      <li>Актуальні маршрути та унікальні тури, що відкривають нові горизонти</li>
+    </ul>
+    <br>
+    <h3>Що ми пропонуємо нашим клієнтам:</h3>
+    <ol>
+      <li>Підбір та бронювання турів відповідно до побажань і бюджету</li>
+      <li>Бронювання авіаквитків, готелів та трансферів</li>
+      <li>Організацію екскурсій та культурних заходів</li>
+      <li>Страхування подорожей та консультації з підготовки</li>
+      <li>Повний супровід у нестандартних та екстремальних турах</li>
+    </ol>
+    <br>
+    <h3>Наш підхід:</h3>
+    <ul>
+      <li>Зробити планування подорожі простим та комфортним</li>
+      <li>Гарантувати максимальний комфорт та безпеку під час туру</li>
+      <li>Створювати незабутні емоції та яскраві спогади для туристів</li>
+      <li>Відкривати унікальні та нетуристичні місця світу</li>
+      <li>Надихати клієнтів на нові подорожі та відкриття</li>
+    </ul>
+<br>
+<br>
+    <p>Обираючи Travel Explorer, ви отримуєте не просто тур, а повний спектр емоцій, відкриттів та яскравих вражень. Ми прагнемо, щоб кожна подорож з нами була безпечною, цікавою та залишила найкращі спогади на все життя.</p>
+  </div>
+</section>
+
+
+<section class="services" id="services">
+  <h2>Популярні тури</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff" alt="">
+      <h3>Похід у гори</h3>
+      <p>Маршрути Карпат, Альп, Кавказу. Підходить як новачкам, так і профі.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="">
+      <h3>Морські круїзи</h3>
+      <p>Подорожі Середземним морем, Карибами, Скандинавією.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="">
+      <h3>Екскурсії Європою</h3>
+      <p>Популярні маршрути: Париж, Рим, Прага, Барселона, Амстердам.</p>
+    </div>
+
+    <div class="card">
+      <img src="data:image/jpeg;base64,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" alt="">
+      <h3>Сафарі в Африці</h3>
+      <p>Кращі національні парки Кенії, Танзанії, Намібії.</p>
+    </div>
+
+    <div class="card">
+      <img src="data:image/jpeg;base64,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" alt="">
+      <h3>Азіатські тури</h3>
+      <p>Таїланд, Японія, Балі, Сінгапур — атмосфера, яку не забути.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503264116251-35a269479413" alt="">
+      <h3>VIP подорожі</h3>
+      <p>Індивідуальні маршрути, приватні гіди, преміум готелі.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="services" id="destinations">
+  <h2>Найпопулярніші країни</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.wallpaperscraft.ru/image/single/skala_gorod_more_137189_1920x1080.jpg" alt="">
+      <h3>Італія</h3>
+      <p>Рим, Флоренція, Венеція — класика європейського туризму.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://s1.1zoom.ru/b5050/623/Norway_Lofoten_Mountains_Houses_Bay_540777_1920x1080.jpg" alt="">
+      <h3>Норвегія</h3>
+      <p>Фіорди, північне сяйво, казкова природа.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img1.akspic.ru/crops/9/6/7/7/87769/87769-zavod-gora-dostoprimechatelnost-pejzazhi_gor-kitajskaya_arhitektura-1920x1080.jpg" alt="">
+      <h3>Японія</h3>
+      <p>Токіо, Кіото, сакура, традиції та сучасність разом.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="services" id="reviews">
+  <h2>Відгуки клієнтів</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Марина</h3>
+      <p>“Замовляли тур у Францію — все було бездоганно! Організація на вищому рівні.”</p>
+    </div>
+
+    <div class="card">
+      <h3>Олег</h3>
+      <p>“Сходили з командою в похід Карпатами. Гід — супер, маршрут підібраний ідеально.”</p>
+    </div>
+
+    <div class="card">
+      <h3>Анна</h3>
+      <p>“Були на круїзі. Особливо сподобалась робота менеджера — все пояснили і супроводжували.”</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <img src="https://images.unsplash.com/photo-1502920917128-1aa500764b3a" alt="">
+  <div>
+    <h2>Контакти</h2>
+    <p>Email: travel@explorer.com</p>
+    <p>Телефон: +380 50 000 00 00</p>
+    <p>Адреса: Київ, вул. Туристична 12</p>
+    <a class="btn" href="mailto:travel@explorer.com">Написати нам</a>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2025 | Travel Explorer | Всі права захищені
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
